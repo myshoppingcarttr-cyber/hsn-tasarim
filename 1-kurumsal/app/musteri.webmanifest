@@ -1,0 +1,23 @@
+{
+  "id": "hsn-aracim",
+  "name": "HSN Aracım – HSN Otomotiv",
+  "short_name": "HSN Aracım",
+  "description": "BMW'nizin servis geçmişi, bakım zamanları ve araç sağlığı. HSN Otomotiv, Antalya.",
+  "lang": "tr",
+  "dir": "ltr",
+  "start_url": "../hesabim.html?kaynak=uygulama",
+  "scope": "../",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0b1f3a",
+  "theme_color": "#0b1f3a",
+  "categories": ["auto", "utilities"],
+  "icons": [
+    { "src": "icons/musteri-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/musteri-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/musteri-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Randevu al", "url": "../randevu.html", "icons": [{ "src": "icons/musteri-192.png", "sizes": "192x192" }] }
+  ]
+}

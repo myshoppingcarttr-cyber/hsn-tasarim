@@ -1,0 +1,116 @@
+/* HSN Otomotiv – müşteri paneli ve servis paneli (tema değişkenlerini kullanır) */
+.app-wrap{max-width:1000px;margin:0 auto;padding:40px 20px 90px}
+.app-wrap.wide{max-width:1240px}
+.app-card{background:var(--card,#fff);border:1px solid var(--line,#ddd);border-radius:var(--r,8px);padding:28px;margin-bottom:22px}
+.app-card.auth{max-width:520px;margin:10px auto 22px}
+.app-card h2{font-size:1.8rem;margin-bottom:10px}
+.app-card h3{font-size:1.25rem;margin-bottom:14px}
+.app-mute{color:var(--mute,#777)}
+.app-small{font-size:.83rem;color:var(--mute,#777);margin-top:14px}
+.app-err{color:#c0271c;font-weight:600;font-size:.92rem}
+.app-demo{background:#fff8e1;border:1px solid #f1d27a;color:#5a4500;border-radius:var(--r,8px);padding:12px 16px;margin-bottom:20px;font-size:.9rem}
+.app-demo code{background:#fff;padding:1px 6px;border-radius:4px;font-weight:700}
+.app-note{background:var(--accent-soft,#eef4ff);border-left:4px solid var(--accent,#1c69d4);border-radius:var(--r,8px);padding:14px 18px;margin-bottom:18px}
+.linkbtn{background:none;border:0;color:var(--accent,#1c69d4);font:inherit;font-weight:700;cursor:pointer;padding:0;text-decoration:underline}
+.btn.sm{padding:7px 12px;font-size:.82rem}
+.btn.busy,.btn:disabled{opacity:.6;pointer-events:none}
+
+/* formlar */
+.app-form label{display:flex;flex-direction:column;gap:6px;font-size:.85rem;font-weight:600;color:var(--mute,#666);margin-bottom:14px}
+.app-form input,.app-form select,.app-form textarea{background:var(--bg,#fff);border:1px solid var(--line,#ccc);color:var(--fg,#111);padding:12px 14px;font:inherit;font-size:1rem;font-weight:400;border-radius:var(--r,8px);width:100%}
+.app-form input:focus,.app-form select:focus,.app-form textarea:focus{outline:0;border-color:var(--accent,#1c69d4);box-shadow:0 0 0 3px var(--accent-soft,rgba(28,105,212,.15))}
+.app-form input[name=code]{font-size:1.6rem;letter-spacing:.4em;text-align:center}
+.app-form .chk{flex-direction:row;align-items:flex-start;gap:10px;font-weight:400;color:var(--fg2,#333);font-size:.88rem}
+.app-form .chk input{width:18px;height:18px;flex:none;margin-top:2px;accent-color:var(--accent,#1c69d4)}
+.app-form .chk a{color:var(--accent,#1c69d4)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:0 18px}
+.grid2 .span2{grid-column:span 2}
+
+/* üst kısım */
+.app-top{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:22px}
+.app-top h2{font-size:2rem}
+.veh-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.veh-tabs button{padding:9px 16px;border:1px solid var(--line,#ccc);background:var(--card,#fff);color:var(--fg,#111);border-radius:var(--r,8px);font:inherit;font-weight:700;cursor:pointer}
+.veh-tabs button.on{background:var(--fg,#111);color:var(--bg,#fff);border-color:var(--fg,#111)}
+
+/* Türk plakası */
+.plate{display:inline-flex;align-items:stretch;border:2px solid #111;border-radius:6px;background:#fff;color:#111;overflow:hidden;font-family:"Arial Narrow",Arial,sans-serif;flex:none}
+.plate i{background:#1f4fb5;color:#fff;font-style:normal;font-size:.7rem;font-weight:700;padding:0 6px;display:flex;align-items:flex-end;padding-bottom:4px}
+.plate b{padding:6px 12px;font-size:1.5rem;letter-spacing:.06em;font-weight:800;white-space:nowrap}
+
+.veh-head{display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-bottom:20px}
+.veh-head h3{font-size:1.4rem;margin:0}
+.veh-head .km{margin-left:auto;text-align:right}
+.veh-head .km small{display:block;color:var(--mute,#777);font-size:.78rem}
+.veh-head .km b{font-size:1.4rem}
+
+/* genel durum */
+.status{display:flex;align-items:center;gap:16px;flex-wrap:wrap;border-radius:var(--r,8px);padding:16px 20px;margin-bottom:24px}
+.status b{font-size:1.1rem}
+.status span{flex:1;min-width:200px}
+.status.ok{background:#e8f6ee;color:#14532d}
+.status.soon{background:#fff4de;color:#7a4b00}
+.status.late{background:#fdecea;color:#8a1c12}
+
+/* bakım kalemleri */
+.app-h{font-size:1.2rem;margin:26px 0 12px}
+.app-h small{font-weight:400;color:var(--mute,#777);font-size:.85rem}
+.health{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
+.hi{border:1px solid var(--line,#ddd);border-top:4px solid #1faa55;border-radius:var(--r,8px);padding:14px 16px;background:var(--bg,#fff);display:flex;flex-direction:column;gap:4px}
+.hi.soon{border-top-color:#f0a400}.hi.late{border-top-color:#d92d20}.hi.none{border-top-color:var(--line,#ccc);opacity:.75}
+.hi b{font-size:.98rem}
+.hi span{font-size:.9rem;font-weight:600}
+.hi small{font-size:.78rem;color:var(--mute,#777)}
+.bar{height:6px;border-radius:3px;background:var(--line,#e5e5e5);overflow:hidden;margin:4px 0}
+.bar i{display:block;height:100%;background:#1faa55}
+.hi.soon .bar i{background:#f0a400}.hi.late .bar i{background:#d92d20}
+
+/* zaman çizelgesi */
+.timeline{list-style:none;border-left:2px solid var(--line,#ddd);margin-left:8px}
+.timeline>li{position:relative;display:grid;grid-template-columns:150px 1fr;gap:18px;padding:0 0 26px 24px}
+.timeline>li::before{content:"";position:absolute;left:-7px;top:4px;width:12px;height:12px;border-radius:50%;background:var(--accent,#1c69d4);border:2px solid var(--card,#fff)}
+.tl-date b{display:block;font-size:.95rem}
+.tl-date span{font-size:.85rem;color:var(--mute,#777)}
+.tl-body h4{font-size:1.1rem;margin:6px 0}
+.tl-body ul{padding-left:18px;margin-bottom:6px}
+.tl-body li{font-size:.93rem;color:var(--fg2,#333)}
+.tl-body p{font-size:.92rem;margin-top:4px}
+.tag{display:inline-block;background:var(--accent-soft,#eef4ff);color:var(--accent,#1c69d4);font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:3px 8px;border-radius:4px}
+
+/* servis paneli */
+.pn-top{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-bottom:22px}
+.pn-top>div:first-child b{display:block;font-size:1.2rem}
+.pn-top>div:first-child small{color:var(--mute,#777)}
+.pn-tabs{display:flex;gap:6px;flex-wrap:wrap;margin-left:auto}
+.pn-tabs button{padding:9px 14px;border:1px solid var(--line,#ccc);background:var(--card,#fff);color:var(--fg,#111);border-radius:var(--r,8px);font:inherit;font-weight:600;cursor:pointer}
+.pn-tabs button.on{background:var(--fg,#111);color:var(--bg,#fff)}
+.pn-tabs em{font-style:normal;background:#d92d20;color:#fff;border-radius:10px;padding:0 7px;font-size:.78rem;margin-left:4px}
+.pn-bar{display:flex;gap:12px;margin-bottom:18px}
+.pn-bar input{flex:1;padding:12px 14px;border:1px solid var(--line,#ccc);border-radius:var(--r,8px);font:inherit;background:var(--card,#fff);color:var(--fg,#111)}
+.tbl{overflow-x:auto}
+.tbl table{width:100%;border-collapse:collapse;font-size:.93rem;margin:0}
+.tbl th{text-align:left;font-size:.74rem;text-transform:uppercase;letter-spacing:.05em;color:var(--mute,#777);padding:8px 10px;border-bottom:2px solid var(--line,#ddd)}
+.tbl td{padding:12px 10px;border-bottom:1px solid var(--line,#eee);vertical-align:top;color:var(--fg,#111)}
+.pill{display:inline-block;padding:3px 10px;border-radius:12px;font-size:.78rem;font-weight:700}
+.pill.ok{background:#e8f6ee;color:#14532d}.pill.soon{background:#fff4de;color:#7a4b00}.pill.late{background:#fdecea;color:#8a1c12}
+details.app-card summary{cursor:pointer;font-weight:700}
+
+@media(max-width:700px){
+  .grid2{grid-template-columns:1fr}.grid2 .span2{grid-column:auto}
+  .timeline>li{grid-template-columns:1fr;gap:4px}
+  .veh-head .km{margin-left:0;text-align:left}
+  .app-card{padding:20px}
+  .pn-tabs{margin-left:0}
+}
+
+/* uygulama (PWA) */
+.pwa-bar{display:flex;align-items:center;gap:14px;flex-wrap:wrap;background:var(--card,#fff);border:1px solid var(--line,#ddd);border-left:4px solid var(--accent,#1c69d4);border-radius:var(--r,8px);padding:12px 44px 12px 14px;margin-bottom:20px;position:relative}
+.pwa-bar img{border-radius:10px;flex:none}
+.pwa-bar>div{flex:1;min-width:200px}
+.pwa-bar b{display:block}
+.pwa-bar span{font-size:.88rem;color:var(--mute,#666)}
+.pwa-bar>div:last-of-type{flex:none;min-width:0}
+.pwa-x{position:absolute;right:8px;top:6px;background:none;border:0;font-size:1.4rem;color:var(--mute,#888);cursor:pointer}
+.pwa-app .topbar,.pwa-app .cta-band,.pwa-app .site-footer,.pwa-app .app-hero,.pwa-app .float .sos{display:none!important}
+.pwa-app .app-wrap{padding-top:18px}
+@media(max-width:700px){.pn-body .app-wrap{padding:16px 12px 70px}.tbl td,.tbl th{white-space:nowrap}}

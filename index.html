@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>HSN Otomotiv – Web Sitesi Tasarım Seçenekleri</title>
+<link rel="icon" href="1-kurumsal/favicon.svg" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f5f7;--fg:#101418;--mute:#667080;--line:#e2e5ea;--accent:#0b5cc4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font-family:"Manrope",system-ui,sans-serif;line-height:1.6}
+.wrap{max-width:1240px;margin:0 auto;padding:0 20px}
+header{padding:56px 0 34px}
+.stripe{display:flex;gap:4px;margin-bottom:18px}.stripe i{width:28px;height:5px;border-radius:2px}
+.stripe i:nth-child(1){background:#6fb6ff}.stripe i:nth-child(2){background:#1c3f94}.stripe i:nth-child(3){background:#e2231a}
+h1{font-size:clamp(2rem,4.4vw,3.2rem);line-height:1.1;letter-spacing:-.02em}
+header p{color:var(--mute);font-size:1.1rem;max-width:720px;margin-top:12px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;padding-bottom:40px}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.shot{display:block;aspect-ratio:16/10;overflow:hidden;border-bottom:1px solid var(--line);background:#ddd}
+.shot img{width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .5s}
+.card:hover .shot img{transform:scale(1.03)}
+.body{padding:24px;display:flex;flex-direction:column;flex:1}
+.num{font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+h2{font-size:1.5rem;margin:4px 0 8px}
+.body p{color:var(--mute);font-size:.96rem;flex:1}
+ul{list-style:none;margin:14px 0 20px;display:grid;gap:6px;font-size:.92rem}
+ul li::before{content:"— ";color:var(--accent);font-weight:800}
+.swatch{display:flex;gap:6px;margin-bottom:18px}.swatch span{width:26px;height:26px;border-radius:50%;border:1px solid var(--line)}
+.btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;padding:13px 20px;border-radius:8px;background:var(--fg);color:#fff;text-decoration:none;font-weight:700}
+.btn:hover{background:var(--accent)}
+.note{background:#fff;border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;padding:22px 26px;margin-bottom:60px;color:#394150}
+.note b{color:var(--fg)}
+.note.demo{background:#fff8e1;border-left-color:#e0a800;margin-top:-40px}
+.note code{background:#fff;padding:1px 6px;border-radius:4px}
+.links{margin:-40px 0 60px;font-size:.95rem;color:var(--mute)}
+.links a{color:var(--accent);font-weight:700}
+@media(max-width:960px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <div class="stripe"><i></i><i></i><i></i></div>
+  <h1>HSN Otomotiv<br>web sitesi tasarım seçenekleri</h1>
+  <p>Aynı içerik, üç farklı görünüm. Her seçeneği açıp tüm sayfalarını gezebilirsiniz. Beğendiğiniz tasarım yayına alınacaktır.</p>
+</header>
+
+<main class="wrap">
+  <div class="grid">
+    <article class="card">
+      <a class="shot" href="1-kurumsal/index.html"><img src="_onizleme/1-kurumsal.png" alt="Kurumsal tasarım önizleme"></a>
+      <div class="body">
+        <span class="num">Seçenek 1</span>
+        <h2>Kurumsal</h2>
+        <p>Beyaz, ferah ve düzenli. Fotoğraflı hizmet kartları ve lacivert vurgu ile profesyonel bir firma izlenimi verir.</p>
+        <ul><li>Geniş kitleye hitap eder</li><li>Güven ve profesyonellik ön planda</li><li>Fotoğraflı hizmet kataloğu</li></ul>
+        <div class="swatch"><span style="background:#fff"></span><span style="background:#0b1f3a"></span><span style="background:#0b5cc4"></span></div>
+        <a class="btn" href="1-kurumsal/index.html">Tasarımı incele →</a>
+      </div>
+    </article>
+    <article class="card">
+      <a class="shot" href="2-motorsport/index.html"><img src="_onizleme/2-motorsport.png" alt="Motorsport tasarım önizleme"></a>
+      <div class="body">
+        <span class="num">Seçenek 2</span>
+        <h2>Motorsport</h2>
+        <p>Koyu zemin, M renkleri, italik yarış tipografisi ve çapraz kesimler. BMW tutkunlarına hitap eden enerjik bir görünüm.</p>
+        <ul><li>BMW meraklılarına özel his</li><li>Dinamik, performans odaklı</li><li>Mozaik galeri, teşhis masası</li></ul>
+        <div class="swatch"><span style="background:#0c0d10"></span><span style="background:#e2231a"></span><span style="background:#6fb6ff"></span></div>
+        <a class="btn" href="2-motorsport/index.html">Tasarımı incele →</a>
+      </div>
+    </article>
+    <article class="card">
+      <a class="shot" href="3-atolye/index.html"><img src="_onizleme/3-atolye.png" alt="Atölye tasarım önizleme"></a>
+      <div class="body">
+        <span class="num">Seçenek 3</span>
+        <h2>Atölye</h2>
+        <p>Endüstriyel ve editoryal. Dükkânın gerçek fotoğrafı tam genişlikte, teknik tablolar ve yatay fotoğraf şeridi.</p>
+        <ul><li>Gerçek atölye havası</li><li>Teknik uzmanlık vurgusu</li><li>Sade, özgün tipografi</li></ul>
+        <div class="swatch"><span style="background:#f2f0eb"></span><span style="background:#141414"></span><span style="background:#1c69d4"></span></div>
+        <a class="btn" href="3-atolye/index.html">Tasarımı incele →</a>
+      </div>
+    </article>
+  </div>
+  <p class="note"><b>Üç seçenekte de ortak:</b> 11 hizmet alanı (DPF dahil), BMW kronik arızalar rehberi, alım öncesi kontrol, online randevu (WhatsApp), <b>konumla acil yardım butonu</b>, <b>müşteri paneli</b> (araç geçmişi, bakım takibi, araç sağlığı), <b>servis paneli / CRM</b> (araç ve işlem kaydı, bakım hatırlatma), 6 blog yazısı, Google yorumları, 360° Sokak Görünümü, Instagram, sayfa geçiş animasyonu ve SEO altyapısı.</p>
+  <div class="note demo"><b>Deneme bilgileri (sunum modu, örnek verilerle):</b><br>
+  Müşteri paneli: menüde <b>Müşteri Girişi</b> → e-posta <code>demo@musteri.com</code> → kod <code>123456</code><br>
+  Servis paneli: adres sonuna <code>/panel.html</code> → e-posta <code>usta@hsnotomotiv.com</code> → kod <code>123456</code><br>
+  <small>Sunum kopyalarında veriler yalnızca o tarayıcıda saklanır; gerçek sistem canlı veritabanına bağlıdır.</small></div>
+  <p class="links">Servis paneli: <a href="1-kurumsal/panel.html">Kurumsal</a> · <a href="2-motorsport/panel.html">Motorsport</a> · <a href="3-atolye/panel.html">Atölye</a> &nbsp;|&nbsp; Müşteri paneli: <a href="1-kurumsal/hesabim.html">Kurumsal</a> · <a href="2-motorsport/hesabim.html">Motorsport</a> · <a href="3-atolye/hesabim.html">Atölye</a></p>
+</main>
+</body>
+</html>
