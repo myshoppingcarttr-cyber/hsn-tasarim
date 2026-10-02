@@ -95,5 +95,14 @@ ul li::before{content:"— ";color:var(--accent);font-weight:800}
   <small>Sunum kopyalarında veriler yalnızca o tarayıcıda saklanır; gerçek sistem canlı veritabanına bağlıdır.</small></div>
   <p class="links">Servis paneli: <a href="1-kurumsal/panel.html">Kurumsal</a> · <a href="2-motorsport/panel.html">Motorsport</a> · <a href="3-atolye/panel.html">Atölye</a> &nbsp;|&nbsp; Müşteri paneli: <a href="1-kurumsal/hesabim.html">Kurumsal</a> · <a href="2-motorsport/hesabim.html">Motorsport</a> · <a href="3-atolye/hesabim.html">Atölye</a></p>
 </main>
+<script>
+// Seçim, WhatsApp mesajına ek olarak Dijitabela CRM'ine de kaydedilir (müşteri mesajı göndermese bile).
+document.querySelectorAll("a.btn.sec").forEach(function (a, i) {
+  a.addEventListener("click", function () {
+    var ad = ["Seçenek 1 · Kurumsal", "Seçenek 2 · Motorsport", "Seçenek 3 · Atölye"][i];
+    try { fetch("https://ctlbhwbccqgwmtqbwtfs.supabase.co/rest/v1/rpc/tasarim_sec", { method: "POST", keepalive: true, headers: { "Content-Type": "application/json", apikey: "sb_publishable_8MszpUT5gCp6cFhAKn-0VA_gW9_1hvy", Authorization: "Bearer sb_publishable_8MszpUT5gCp6cFhAKn-0VA_gW9_1hvy" }, body: JSON.stringify({ p: { isletme: "HSN Otomotiv", secim: ad } }) }); } catch (e) {}
+  });
+});
+</script>
 </body>
 </html>
