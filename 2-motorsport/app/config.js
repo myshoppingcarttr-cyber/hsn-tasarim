@@ -6,6 +6,6 @@
 window.HSN_CONFIG = {
   supabaseUrl: "",
   supabaseAnonKey: "",
-  whatsapp: "905327774760",
-  telefon: "0532 777 47 60"
+  whatsapp: "905373399433",
+  telefon: "0537 339 94 33"
 };
